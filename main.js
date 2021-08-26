@@ -1,28 +1,31 @@
-menu_list_array = ["Chicken Tandoori Pizza", "Deluxe Veg Pizza", "Paneer Tikka Pizza", "Veg Extravaganza Pizza","Veg Magherita Pizza","Veg Supreme Pizza",""];
+vegmenu_list_array = ["Peppy Paneer Pizza", "Deluxe Veggie Pizza", "Paneer Tikka Pizza", "Veg Extravaganza Pizza", "Veg Supreme Pizza", "Veg Margherita Pizza", "Mexican Green Wave"];
 
-function getmenu(){
-var htmldata;
-menu_list_array.sort();
-        for(var i = 0 ; i < menu_list_array.length ; i++){
-            htmldata = htmldata + menu_list_array[i] + '<br>'
-        }
-        document.getElementById("display_menu").innerHTML = htmldata;
-        //give the appropriate id name as display_menu  
+function get_veg_menu() {
+    var htmldata;
+    htmldata = "<ol class='menulist'>";
+    vegmenu_list_array.sort();
+    for (var i = 0; i < vegmenu_list_array.length; i++) {
+        htmldata = htmldata + '<li>' + vegmenu_list_array[i] + '</li>';
+    }
+    htmldata = htmldata + "</ol>"
+    document.getElementById("display_veg_menu").innerHTML = htmldata;
 }
 
-function add_item(){
-var htmldata;
-var item=document.getElementById("add_item").value;
-        menu_list_array.sort();
-        htmldata = menu_list_array;
-        for(var i=0;i<menu_list_array.length;i++){
-            htmldata = htmldata + imgtags + menu_list_array[i]+'<br>';
-        }
-         document.getElementById("display_addedmenu").innerHTML = htmldata;		
-      }
+function add_vegitem() {
+    var htmldata;
+    var item = document.getElementById("add_veg_item").value;
+    vegmenu_list_array.sort();
+    htmldata = "<section class='cards'>";
+    for (var i = 0; i < vegmenu_list_array.length; i++) {
+        htmldata = htmldata + '<div class="card">' + '<img src="pizzaImg.png" style="width: 100px; height:80px;"/>' + vegmenu_list_array[i] + '</div>';
+    }
+    htmldata = htmldata + "</section>"
+    document.getElementById("display_addedmenu").innerHTML = htmldata;
+}
 
-function add_top(){
-    var item=document.getElementById("add_item").value;
-    menu_list_array.push(item);
-	add_item();
+
+function add_top() {
+    var item = document.getElementById("add_veg_item").value;
+    vegmenu_list_array.push(item);
+    add_vegitem();
 }

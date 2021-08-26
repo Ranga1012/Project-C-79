@@ -1,140 +1,128 @@
-body{
-	background-image:url("Saare\ Jaahaan\ Se\ Acchaan\ \(3\).png");
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-#display_menu{
-	background-color: rgba(143, 99, 99, 0);
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-right: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-right: 10px;
+body {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .topnav {
-	overflow: hidden;
-	background-color: #333;
-	position:sticky;
-	top: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
     width: 100%;
-  }
-  
-  .topnav a {
-	float: left;
-	color: #f2f2f2;
-	font-family: cursive;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
-  }
-  
-  .topnav a:hover {
-	background-color: #bbb;
-	color: black;
-  }
-
-  .topnav-right {
-	float: right;
-  }
-
-  .row::after {
-	content: "";
-	clear: both;
-	display: table;
-  }
-  .img_div{
-	float: left;
-	width: 50%;
-	padding: 5px;
-  }
-  .menu_div{
-	float: right;
-	width: 50%;
-	padding: 160px;
-	color: rgb(0, 0, 0);
-	font-weight: bold;
-	font-size: 25px;
-	font-family: cursive;
-	text-shadow: #ff0000;
-  }
-  #menu_list{
-	background-color:#2fc2a2;
-	color:black; 
-	width: 200px;
-	border: none;
-	size: 50px;
-  }
-
-  .newRow::after {
-	content: "";
-	clear: both;
-	display: table;
 }
 
-  .block1{
-	float: left;
-	width: 20%;
-	padding: 5px;
-  }
-  .block2{
-	float: left;
-	width: 80%;
-	padding: 5px;
-	color: rgb(229, 255, 0);
-	font-size: 25px;
-	font-family: cursive;
-  }
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    font-family: cursive;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
 
-  #add_toppings{
-	padding-left:30px;
-	width:150px;
-	height:100px;
-	border: none;
-	background-color:#e2062c;
-	color:black;
-	font-size: 15px;
-	font-family: cursive;
-  }
+.topnav a:hover {
+    background-color: #bbb;
+    color: black;
+}
 
-  #add_item {
-	font-family: cursive;
-	font-size: 15px;
-	line-height: 20px;
-	width: 80%;
-	height: 50px;
-	color: #ff0000;
+.topnav-right {
+    float: right;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.img_div {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+.veg_menu_div {
+    float: right;
+    width: 50%;
+    padding: 160px;
+    color: honeydew;
+    font-size: 25px;
+    font-family: cursive;
+}
+
+.non_veg_menu_span {
+    float: right;
+    width: 50%;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    color: honeydew;
+    font-size: 25px;
+    font-family: cursive;
+}
+
+#menu_list {
+    background-color: #f5c71a;
+    color: black;
+    width: 300px;
+    border: none;
+}
+
+.newRow::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.block1 {
+    float: left;
+    width: 20%;
+    padding: 5px;
+}
+
+.block2 {
+    float: left;
+    width: 80%;
+    padding: 5px;
+    color: honeydew;
+    font-size: 25px;
+    font-family: cursive;
+}
+
+#add_toppings {
+    width: 150px;
+    height: 100px;
+    border: none;
+    background-color: #e2062c;
+    color: black;
+    font-size: 15px;
+    font-family: cursive;
+}
+
+#add_item {
+    font-family: cursive;
+    font-size: 15px;
+    line-height: 20px;
+    width: 80%;
+    height: 50px;
+    color: #ffffff;
     background: none;
     border: none;
     border-bottom: 1px solid rgb(223, 205, 205);
     outline: none;
- }
+}
 
 [placeholder]:focus::-webkit-input-placeholder {
-    transition: text-indent 0.4s 0.4s ease; 
+    transition: text-indent 0.4s 0.4s ease;
     text-indent: -100%;
-	opacity: 1;
-	color: rgb(255, 0, 0);
- }
-
-#im1{
-	width:100px;
-	height: 80px;
+    opacity: 1;
+    color: white;
 }
 
-#display_addedmenu{
-	float: right;
-	width: 50%;
-	padding: 160px;
-	color: rgb(255, 0, 0);
-	font-weight: bold;
-	font-size: 25px;
-	font-family: cursive;
-}
-
-#add_toppings{
-	font-size: medium;
+#im1 {
+    width: 100px;
+    height: 80px;
 }
